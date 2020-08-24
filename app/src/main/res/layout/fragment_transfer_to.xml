@@ -72,6 +72,7 @@
                 android:layout_height="50dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="32dp"
+                android:entries="@array/bank_names"
                 android:spinnerMode="dropdown"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
