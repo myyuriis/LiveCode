@@ -43,5 +43,14 @@
         android:id="@+id/transferAmountFragment"
         android:name="com.example.livecode.screens.TransferAmountFragment"
         android:label="fragment_transfer_amount"
-        tools:layout="@layout/fragment_transfer_amount" />
+        tools:layout="@layout/fragment_transfer_amount" >
+        <action
+            android:id="@+id/action_transferAmountFragment_to_transferSuccessFragment"
+            app:destination="@id/transferSuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transferSuccessFragment"
+        android:name="com.example.livecode.screens.TransferSuccessFragment"
+        android:label="fragment_transfer_success"
+        tools:layout="@layout/fragment_transfer_success" />
 </navigation>
