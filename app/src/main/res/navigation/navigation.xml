@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.livecode.screens.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.livecode.screens.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_transferToFragment"
+            app:destination="@id/transferToFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.livecode.screens.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/transferToFragment"
+        android:name="com.example.livecode.screens.TransferToFragment"
+        android:label="fragment_transfer_to"
+        tools:layout="@layout/fragment_transfer_to" >
+        <action
+            android:id="@+id/action_transferToFragment_to_transferAmountFragment"
+            app:destination="@id/transferAmountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transferAmountFragment"
+        android:name="com.example.livecode.screens.TransferAmountFragment"
+        android:label="fragment_transfer_amount"
+        tools:layout="@layout/fragment_transfer_amount" />
+</navigation>
